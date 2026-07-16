@@ -1,0 +1,38 @@
+name: Update projects
+
+# README.md is generated on push. The language card is updated manually by a separate workflow.
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/README.src.md
+      - scripts/badges.mjs
+      - scripts/projects.mjs
+      - scripts/update-projects.mjs
+      - .github/workflows/update-projects.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/update-projects.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          if [ -z "$(git status --short -- README.md)" ]; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update generated README"
+          git push
