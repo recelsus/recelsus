@@ -42,8 +42,8 @@ For narrow utilities, I use C, C++, or Assembly when low runtime cost and a smal
 <!-- badges:auto:end -->
 
 <!-- organizations:auto:start -->
-- [recelsus-reagents](https://github.com/recelsus-reagents) - Reusable project templates and starting points for rapid software development.
-- [recelsus-formulations](https://github.com/recelsus-formulations) - Development environment configurations and carefully formulated dotfiles.
-- [recelsus-assays](https://github.com/recelsus-assays) - Experimental code, benchmarks, and validation projects for software behaviour.
-- [recelsus-primers](https://github.com/recelsus-primers) - Resources for learning, reference, and exploration.
+- [reagents](https://github.com/recelsus-reagents) - Reusable project templates and starting points for rapid software development.
+- [formulations](https://github.com/recelsus-formulations) - Development environment configurations and carefully formulated dotfiles.
+- [assays](https://github.com/recelsus-assays) - Experimental code, benchmarks, and validation projects for software behaviour.
+- [compendium](https://github.com/recelsus-compendium) - Resources for learning, reference, and exploration.
 <!-- organizations:auto:end -->
