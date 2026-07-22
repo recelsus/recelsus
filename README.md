@@ -41,10 +41,9 @@ For narrow utilities, I use C, C++, or Assembly when low runtime cost and a smal
 </table>
 <!-- badges:auto:end -->
 
-<!-- projects:auto:start -->
-- [karing](https://github.com/recelsus/karing) - A simple C++ server app, like pastebin.
-- [Roche-Limit](https://github.com/recelsus/Roche-Limit) - C++20 authorization server and CLI, using SQLite IP and API key rules.
-- [lanc](https://github.com/recelsus/lanc) - Minimal single-file text editor for constrained Unix-like environments.
-- [sfil](https://github.com/recelsus/sfil) - Small CLI tool to temporarily serve a local file over HTTP.
-- [Spagyrist](https://github.com/recelsus/libspagyrist) - C++ library for search candidate selection, document modeling, rendering, and output.
-<!-- projects:auto:end -->
+<!-- organizations:auto:start -->
+- [recelsus-reagents](https://github.com/recelsus-reagents) - Reusable project templates and starting points for rapid software development.
+- [recelsus-formulations](https://github.com/recelsus-formulations) - Development environment configurations and carefully formulated dotfiles.
+- [recelsus-assays](https://github.com/recelsus-assays) - Experimental code, benchmarks, and validation projects for software behaviour.
+- [recelsus-primers](https://github.com/recelsus-primers) - Resources for learning, reference, and exploration.
+<!-- organizations:auto:end -->
