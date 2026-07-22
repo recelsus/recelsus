@@ -4,5 +4,5 @@ For narrow utilities, I use C, C++, or Assembly when low runtime cost and a smal
 <!-- badges:auto:start -->
 <!-- badges:auto:end -->
 
-<!-- projects:auto:start -->
-<!-- projects:auto:end -->
+<!-- organizations:auto:start -->
+<!-- organizations:auto:end -->

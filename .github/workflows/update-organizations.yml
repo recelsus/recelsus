@@ -1,4 +1,4 @@
-name: Update projects
+name: Update organizations
 
 # README.md is generated on push. The language card is updated manually by a separate workflow.
 on:
@@ -8,24 +8,22 @@ on:
     paths:
       - .github/README.src.md
       - scripts/badges.mjs
-      - scripts/projects.mjs
-      - scripts/update-projects.mjs
-      - .github/workflows/update-projects.yml
+      - scripts/organizations.mjs
+      - scripts/update-organizations.mjs
+      - .github/workflows/update-organizations.yml
 
 permissions:
   contents: write
 
 jobs:
-  update-projects:
+  update-organizations:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/update-projects.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: node scripts/update-organizations.mjs
       - run: |
           if [ -z "$(git status --short -- README.md)" ]; then
             exit 0
