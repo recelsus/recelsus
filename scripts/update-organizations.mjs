@@ -46,8 +46,11 @@ function renderBadges() {
 const source = await fs.readFile(sourcePath, "utf8");
 
 const organizationRows = organizations.map(
-  (organization) =>
-    `- [${organization.name}](https://github.com/${organization.name}) - ${escapeListText(organization.description)}`,
+  (organization) => {
+    const label = organization.label || organization.name;
+    const url = organization.url || `https://github.com/${organization.name}`;
+    return `- [${label}](${url}) - ${escapeListText(organization.description)}`;
+  },
 );
 
 const generatedOrganizations = [
